@@ -501,8 +501,35 @@
       section { padding: 65px 0; }
       .investor-grid, .process-grid, .form-grid, .check-grid { grid-template-columns: 1fr; }
       .form-shell { padding: 22px 17px; }
+    }    /* Fix social media icon sizes */
+    .social-links {
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+
+    .social-links .social-icon {
+      width: 32px !important;
+      height: 32px !important;
+      min-width: 32px !important;
+      min-height: 32px !important;
+      max-width: 32px !important;
+      max-height: 32px !important;
+      padding: 0 !important;
+      box-sizing: border-box !important;
+      flex: 0 0 32px !important;
+    }
+
+    .social-links .social-icon svg {
+      width: 15px !important;
+      height: 15px !important;
+      min-width: 15px !important;
+      max-width: 15px !important;
+      min-height: 15px !important;
+      max-height: 15px !important;
     }
   </style>
+     
 </head>
 
 <body>
