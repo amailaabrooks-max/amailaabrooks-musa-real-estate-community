@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101C2C">
+<meta name="description" content="MUSA Real Estate Community — investor-focused property research and acquisition support.">
+<title>MUSA Real Estate Community | Investor Acquisition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101C2C;--navy2:#192B40;--gold:#B69A62;--goldlight:#D2BD8E;--ivory:#F7F5F0;--white:#fff;--ink:#222A34;--muted:#68717D;--line:#E5E0D6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+a{color:inherit}button,input,select,textarea{font:inherit}
+.container{width:min(1140px,calc(100% - 38px));margin:auto}
+section{padding:82px 0}
+h1,h2,.serif{font-family:"Playfair Display",Georgia,serif;font-weight:500}
+.eyebrow{font-size:.73rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.heading{max-width:700px;margin-bottom:34px}
+.heading h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.15;color:var(--navy);margin:12px 0}
+.heading p{color:var(--muted);max-width:640px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 19px;text-decoration:none;font-size:.86rem;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.gold-btn{background:var(--gold);color:var(--navy)}
+.gold-btn:hover{background:var(--goldlight)}
+.outline-btn{border-color:#A8B0B9;color:white;background:transparent}
+.outline-btn:hover{border-color:white;background:#ffffff12}
+header{position:sticky;top:0;z-index:10;background:var(--navy);border-bottom:1px solid #B69A6238}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}
+.brand-mark{width:43px;height:43px;flex:none}
+.brand-name{font-family:"Playfair Display",Georgia,serif;font-size:1.05rem;letter-spacing:.09em;color:white;line-height:1.2}
+.brand-sub{font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:var(--goldlight);margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:22px}
+.nav-links>a:not(.btn){font-size:.82rem;color:#E4E7EB;text-decoration:none}
+.nav-links>a:not(.btn):hover{color:var(--goldlight)}
+.menu-toggle{display:none;background:none;color:white;border:1px solid #ffffff50;padding:7px 12px;font-size:1.25rem}
+.hero{color:white;min-height:590px;display:flex;align-items:center;background:linear-gradient(90deg,#0A1420F5 0%,#0A1420D9 52%,#0A142080 100%),url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=85") center/cover no-repeat}
+.hero-content{padding:95px 0;max-width:770px}
+.hero .eyebrow{color:var(--goldlight)}
+.hero h1{font-size:clamp(2.9rem,6.2vw,5.3rem);line-height:1.04;letter-spacing:-.03em;margin:20px 0}
+.hero h1 span{color:var(--goldlight);font-style:italic}
+.hero p{max-width:620px;color:#E1E5EA;font-size:1.05rem;line-height:1.85;margin-bottom:25px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-note{font-size:.76rem;color:#D0D5DB;margin-top:34px;letter-spacing:.035em}
+.intro{background:white;border-bottom:1px solid var(--line)}
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.intro h2{color:var(--navy);font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.25;margin:0}
+.intro p{color:var(--muted);margin:0}
+.approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);padding:28px;position:relative}
+.card:after{content:"";position:absolute;bottom:0;left:0;width:45px;height:3px;background:var(--gold)}
+.card-num{font-family:"Playfair Display",Georgia,serif;color:var(--gold);display:block;margin-bottom:20px}
+.card h3{font-size:1.05rem;color:var(--navy);margin:0 0 9px}
+.card p{font-size:.9rem;color:var(--muted);margin:0}
+.investors{background:var(--navy);color:white}
+.investors .heading h2{color:white}
+.investors .heading p{color:#C6CDD5}
+.investor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.investor-card{padding:23px 19px;border:1px solid #ffffff24;background:#ffffff08}
+.investor-card h3{font-size:.97rem;margin:0 0 8px}
+.investor-card p{font-size:.84rem;color:#C4CCD5;margin:0}
+.gold-line{width:32px;height:2px;background:var(--gold);margin-bottom:20px}
+.investor-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #ffffff24;padding-top:24px;margin-top:26px}
+.investor-bottom p{color:#D5DAE0;font-size:.9rem;margin:0}
+.form-section{background:white}
+.form-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:start}
+.form-aside{position:sticky;top:100px}
+.form-aside .heading h2{font-size:clamp(2rem,3.4vw,2.9rem)}
+.form-points{display:grid;gap:13px;color:#4E5864;font-size:.88rem;margin-top:24px}
+.form-point{display:flex;gap:10px;align-items:flex-start}
+.check{color:#8A7549;border:1px solid var(--gold);width:21px;height:21px;display:grid;place-items:center;flex:none}
+.buybox-form{background:var(--ivory);border:1px solid var(--line);padding:28px}
+.form-title{font:500 1.55rem "Playfair Display",Georgia,serif;color:var(--navy);margin:0 0 5px}
+.form-intro{font-size:.83rem;color:var(--muted);margin:0 0 18px}
+.notice{padding:13px 14px;margin:0 0 23px;background:#FFF8E9;border-left:3px solid var(--gold);font-size:.79rem;color:#4F4A40;line-height:1.65}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:.78rem;font-weight:700;color:#333D48}
+.field input,.field select,.field textarea{width:100%;min-height:45px;border:1px solid #D8D4CB;background:white;color:var(--ink);padding:11px;border-radius:2px;outline:none}
+.field textarea{min-height:100px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #B69A6226}
+.consent{display:flex;gap:9px;align-items:flex-start;font-size:.75rem;color:var(--muted);line-height:1.55}
+.consent input{margin-top:5px;accent-color:var(--navy)}
+.submit-row{grid-column:1/-1}
+.submit-row button{width:100%;border:0}
+.form-notice{font-size:.76rem;color:var(--muted);line-height:1.6;margin:11px 0 0}
+.form-status{display:none;background:white;border:1px solid var(--gold);padding:12px;margin-top:13px;font-size:.83rem;color:var(--navy)}
+.form-status.show{display:block}
+.contact{background:#EFEEE8}
+.contact-grid{display:grid;grid-template-columns:1fr .85fr;gap:48px;align-items:start}
+.contact-copy h2{font-size:clamp(2.1rem,4vw,3.35rem);line-height:1.14;color:var(--navy);margin:13px 0 17px}
+.contact-copy p{color:var(--muted);max-width:550px}
+.contact-card{background:white;border:1px solid var(--line);padding:28px}
+.contact-person{font:500 1.4rem "Playfair Display",Georgia,serif;color:var(--navy);margin:0}
+.contact-role{font-size:.81rem;color:var(--muted);margin:4px 0 20px}
+.contact-details{display:grid;gap:11px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.contact-details a{text-decoration:none;color:#424B56;font-size:.88rem;overflow-wrap:anywhere}
+.contact-details a:hover{color:#8B713E}
+.social-heading{font-size:.69rem;font-weight:700;letter-spacing:.15em;color:#69717A;margin:20px 0 12px;text-transform:uppercase}
+.social-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.social-icon{width:32px;height:32px;flex:0 0 32px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;color:var(--gold);background:white;border:1px solid #B69A62B8;border-radius:50%;text-decoration:none;transition:background .2s,color .2s}
+.social-icon:hover{background:var(--navy);color:var(--goldlight)}
+.social-icon svg{display:block;width:15px;height:15px}
+.site-footer{background:#0C1623;color:#AEB6C0;padding:22px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.footer-brand{display:flex;gap:9px;align-items:center;text-decoration:none;color:white;font-family:"Playfair Display",Georgia,serif;font-size:.9rem}
+.footer-brand .brand-mark{width:30px;height:30px}
+.footer-small{font-size:.72rem;margin:0;text-align:right}
+@media(max-width:900px){.nav-links{gap:13px}.nav-links>a:not(.btn){font-size:.75rem}.form-layout{grid-template-columns:1fr;gap:28px}.form-aside{position:static}.investor-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){section{padding:65px 0}.container{width:calc(100% - 30px)}.nav{min-height:70px}.brand-mark{width:37px;height:37px}.brand-name{font-size:.92rem}.brand-sub{font-size:.5rem}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;padding:15px 20px 20px;background:var(--navy);flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links>a:not(.btn){padding:12px 0;border-bottom:1px solid #ffffff16;font-size:.9rem}.nav-links .btn{margin-top:12px}.hero{min-height:570px}.hero-content{padding:75px 0}.hero h1{font-size:clamp(2.7rem,12vw,4.2rem)}.hero p{font-size:.98rem}.actions{flex-direction:column;align-items:stretch;max-width:350px}.intro-grid,.approach-grid,.contact-grid{grid-template-columns:1fr;gap:18px}.investor-grid{grid-template-columns:1fr 1fr;gap:10px}.investor-card{padding:18px 14px}.investor-bottom{align-items:flex-start;flex-direction:column}.buybox-form{padding:20px 15px}.form-grid{grid-template-columns:1fr}.field.full,.submit-row{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}.footer-small{text-align:left}}
+@media(max-width:420px){.investor-grid{grid-template-columns:1fr}.brand{gap:7px}.brand-name{font-size:.85rem}.brand-sub{font-size:.46rem;letter-spacing:.1em}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home" aria-label="MUSA Real Estate Community home">
+<svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="MUSA building and arrow mark">
+<path d="M7 54H57M13 52V29L22 21V52M22 52V14L32 7L42 14V52M42 52V25L51 31V52" fill="none" stroke="#B69A62" stroke-width="2" stroke-linejoin="round"/>
+<path d="M5 12H28M21 5L28 12L21 19" fill="none" stroke="#D2BD8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 20H31M34 20H37M28 29H31M34 29H37M28 38H31M34 38H37M28 46H31M34 46H37" stroke="#D2BD8E" stroke-width="1.5"/>
+</svg>
+<span><span class="brand-name" style="display:block">MUSA REAL ESTATE</span><span class="brand-sub" style="display:block">Acquisition Community</span></span>
+</a>
+<button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+<nav class="nav-links" id="nav-links" aria-label="Main navigation">
+<a href="#approach">Our Approach</a><a href="#investors">Investors</a><a href="#buybox">Buy Box</a><a href="#contact">Contact</a>
+<a class="btn gold-btn" href="#buybox">Submit Your Buy Box ↗</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-content">
+<span class="eyebrow">Investor-focused acquisition support</span>
+<h1>Real Estate Acquisition.<br><span>Built Around</span><br>Your Criteria.</h1>
+<p>We focus on understanding investor buy boxes, researching property opportunities, and supporting a more informed acquisition process.</p>
+<div class="actions"><a class="btn gold-btn" href="#buybox">Submit Your Buy Box ↗</a><a class="btn outline-btn" href="#contact">Discuss Your Criteria</a></div>
+<div class="hero-note">Clear criteria. Considered research. Investor-led decisions.</div>
+</div>
+</section>
+<section class="intro">
+<div class="container intro-grid">
+<h2>Better acquisition starts with knowing exactly what you are looking for.</h2>
+<p>Every investor has different markets, budgets, strategies, and property requirements. We begin by understanding yours, so research and conversations can stay focused on your goals.</p>
+</div>
+</section>
+<section id="approach">
+<div class="container">
+<div class="heading"><span class="eyebrow">Our approach</span><h2>A thoughtful process. A clearer path forward.</h2><p>We support early acquisition research and organization. Final investment decisions remain with the investor.</p></div>
+<div class="approach-grid">
+<article class="card"><span class="card-num">01 / Research</span><h3>Property Research</h3><p>Research opportunities around your preferred markets, property types, budget, and investment strategy.</p></article>
+<article class="card"><span class="card-num">02 / Evaluate</span><h3>Deal Evaluation</h3><p>Organize available property information and key considerations to help you assess potential fit.</p></article>
+<article class="card"><span class="card-num">03 / Support</span><h3>Acquisition Support</h3><p>Keep your criteria and next steps organized as you review opportunities.</p></article>
+</div>
+</div>
+</section>
+<section class="investors" id="investors">
+<div class="container">
+<div class="heading"><span class="eyebrow">Who we work with</span><h2>Different strategies. One clear starting point.</h2><p>Share your criteria and preferred approach. The clearer your buy box, the easier it is to understand what may fit.</p></div>
+<div class="investor-grid">
+<article class="investor-card"><div class="gold-line"></div><h3>Fix &amp; Flip</h3><p>Properties considered with renovation and resale plans in mind.</p></article>
+<article class="investor-card"><div class="gold-line"></div><h3>Buy &amp; Hold</h3><p>Longer-term ownership opportunities aligned with investor criteria.</p></article>
+<article class="investor-card"><div class="gold-line"></div><h3>Rental Property Buyers</h3><p>Property requirements guided by rental strategy and target market.</p></article>
+<article class="investor-card"><div class="gold-line"></div><h3>Cash &amp; Other Buyers</h3><p>Acquisition criteria organized around funding and readiness.</p></article>
+</div>
+<div class="investor-bottom"><p>Have a target market or specific criteria in mind?</p><a class="btn gold-btn" href="#buybox">Tell Us What You Buy ↗</a></div>
+</div>
+</section>
+<section class="form-section" id="buybox">
+<div class="container form-layout">
+<aside class="form-aside">
+<div class="heading"><span class="eyebrow">Investor buy box</span><h2>Tell us what a good fit looks like.</h2><p>Share your acquisition criteria so the conversation can start with the details that matter to you.</p></div>
+<div class="form-points"><div class="form-point"><span class="check">✓</span><span>Your preferred markets and property types</span></div><div class="form-point"><span class="check">✓</span><span>Your budget, strategy, and condition preferences</span></div><div class="form-point"><span class="check">✓</span><span>Your timeline and acquisition readiness</span></div></div>
+</aside>
+<form class="buybox-form" id="buybox-form">
+<h3 class="form-title">Investor Criteria Form</h3>
+<p class="form-intro">Fields marked * are required. Please share only information you are comfortable sending by email.</p>
+<div class="notice"><strong>Submission note:</strong> This website does not store form entries or send them automatically. When you submit, your device will try to open an email draft. You must review it and press <strong>Send</strong>. If no draft opens, email <a href="mailto:amailaabrooks@gmail.com">amailaabrooks@gmail.com</a> directly.</div>
+<div class="form-grid">
+<div class="field"><label for="full-name">Full name *</label><input id="full-name" name="Full name" autocomplete="name" required placeholder="Your name"></div>
+<div class="field"><label for="email">Email address *</label><input id="email" name="Email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="phone">Phone number (optional)</label><input id="phone" name="Phone" type="tel" autocomplete="tel" placeholder="Country code + number"></div>
+<div class="field"><label for="company">Company / entity (optional)</label><input id="company" name="Company or entity" placeholder="Company name"></div>
+<div class="field"><label for="market">Target market(s) *</label><input id="market" name="Target markets" required placeholder="City, state or ZIP codes"></div>
+<div class="field"><label for="strategy">Investment strategy *</label><select id="strategy" name="Investment strategy" required><option value="">Choose a strategy</option><option>Fix &amp; Flip</option><option>Buy &amp; Hold</option><option>Rental Property</option><option>Cash Purchase</option><option>Multiple strategies</option><option>Other</option></select></div>
+<div class="field"><label for="property-type">Property type *</label><select id="property-type" name="Property type" required><option value="">Choose property type</option><option>Single-family residential</option><option>2–4 unit multifamily</option><option>5+ unit multifamily</option><option>Condo / townhouse</option><option>Land</option><option>Other / flexible</option></select></div>
+<div class="field"><label for="budget">Purchase budget *</label><select id="budget" name="Purchase budget" required><option value="">Choose a range</option><option>Under $50,000</option><option>$50,000–$100,000</option><option>$100,000–$150,000</option><option>$150,000–$250,000</option><option>$250,000–$500,000</option><option>$500,000+</option><option>Flexible / depends on deal</option></select></div>
+<div class="field"><label for="condition">Preferred condition</label><select id="condition" name="Preferred condition"><option value="">Choose condition</option><option>Turnkey / move-in ready</option><option>Light repairs</option><option>Moderate repairs</option><option>Heavy rehab / full renovation</option><option>Flexible</option></select></div>
+<div class="field"><label for="occupancy">Occupancy preference</label><select id="occupancy" name="Occupancy preference"><option value="">Choose preference</option><option>Vacant</option><option>Tenant-occupied</option><option>Owner-occupied</option><option>Flexible</option></select></div>
+<div class="field"><label for="funding">Funding approach</label><select id="funding" name="Funding approach"><option value="">Choose approach</option><option>Cash</option><option>Conventional / bank financing</option><option>Private or hard money</option><option>Other financing</option><option>Depends on property</option></select></div>
+<div class="field"><label for="timeline">Purchase timeline</label><select id="timeline" name="Purchase timeline"><option value="">Choose timeline</option><option>Ready to review opportunities now</option><option>Within 30 days</option><option>Within 1–3 months</option><option>3+ months</option><option>Researching / planning</option></select></div>
+<div class="field full"><label for="criteria">Additional criteria (optional)</label><textarea id="criteria" name="Additional criteria" placeholder="Deal-breakers, desired features, price targets, rent expectations, or other details."></textarea></div>
+<div class="field full"><label class="consent"><input type="checkbox" name="Consent" id="consent" required><span>I understand this form does not automatically submit or store my details. It prepares an email draft that I must send. *</span></label></div>
+<div class="submit-row"><button class="btn gold-btn" type="submit">Prepare Buy Box Email ↗</button><p class="form-notice">No automatic submission or storage is connected yet. Review the email draft and press Send to submit your criteria.</p><div class="form-status" id="form-status" role="status" aria-live="polite"></div></div>
+</div>
+</form>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div class="contact-copy"><span class="eyebrow">Let's connect</span><h2>Start with a conversation about your criteria.</h2><p>Have questions or prefer to discuss your investment requirements directly? Reach out using the contact details or connect with MUSA through its social channels.</p></div>
+<div class="contact-card">
+<p class="contact-person">Amaila Brooks</p><p class="contact-role">Acquisition Manager · MUSA Real Estate Community</p>
+<div class="contact-details"><a href="mailto:amailaabrooks@gmail.com">✉ &nbsp; amailaabrooks@gmail.com</a><a href="tel:+17375377679">☎ &nbsp; +1 737-537-7679</a></div>
+<p class="social-heading">Connect with MUSA</p>
+<div class="social-links" aria-label="MUSA social media links">
+<a class="social-icon" href="https://www.youtube.com/@musa_realestate_community" target="_blank" rel="noopener noreferrer" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12s0 3.8.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-5.8.5-5.8s0-3.8-.5-5.8ZM9.6 15.5v-7l6.2 3.5-6.2 3.5Z"/></svg></a>
+<a class="social-icon" href="https://www.instagram.com/musa_realestate_community" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+<a class="social-icon" href="https://www.tiktok.com/@musarealestate.com" target="_blank" rel="noopener noreferrer" title="TikTok" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.6 6.2a5.7 5.7 0 0 1-3.5-1.2V15a6.2 6.2 0 1 1-5.4-6.1V12a3.1 3.1 0 1 0 2.2 3V1.5h3.2a5.7 5.7 0 0 0 3.5 3.5Z"/></svg></a>
+<a class="social-icon" href="https://www.facebook.com/MusaRealEstatecommunity/" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.7v1.9h-3v3.2h3V21Z"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#home">MUSA Real Estate Community</a><p class="footer-small">© <span id="year">2026</span> MUSA Real Estate Community. All rights reserved.</p></div></footer>
+<script>
+(function(){
+const menuButton=document.querySelector(".menu-toggle");
+const menu=document.querySelector("#nav-links");
+if(menuButton&&menu){
+menuButton.addEventListener("click",function(){
+const open=menu.classList.toggle("open");
+menuButton.setAttribute("aria-expanded",String(open));
+menuButton.textContent=open?"×":"☰";
+});
+menu.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){menu.classList.remove("open");menuButton.setAttribute("aria-expanded","false");menuButton.textContent="☰";});});
+}
+const year=document.querySelector("#year");if(year)year.textContent=new Date().getFullYear();
+const form=document.querySelector("#buybox-form");
+const status=document.querySelector("#form-status");
+if(form)form.addEventListener("submit",function(e){
+e.preventDefault();
+if(!form.reportValidity())return;
+const data=new FormData(form),lines=[];
+for(const item of data.entries()){if(item[0]!=="Consent"&&String(item[1]).trim())lines.push(item[0]+": "+String(item[1]).trim());}
+const subject="Investor Buy Box Submission - "+(data.get("Full name")||"New Investor");
+const body="Hello MUSA Real Estate Community,\n\nHere are my investor acquisition criteria:\n\n"+lines.join("\n")+"\n\nThank you.";
+status.textContent="An email draft should open. Please review it and press Send. If it does not open, email amailaabrooks@gmail.com directly. This website does not store your entries.";
+status.classList.add("show");
+window.location.href="mailto:amailaabrooks@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+});
+})();
+</script>
+</body>
+</html>
