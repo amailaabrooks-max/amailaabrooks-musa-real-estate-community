@@ -1,1 +1,770 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B1422">
+<meta name="description" content="Amaila Brooks — Investor Relations &amp; Disposition in collaboration with the MUSA Real Estate Community acquisition team.">
+<title>Amaila Brooks | Investor Relations &amp; Disposition — MUSA Real Estate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1422;--navy2:#122238;--navy3:#1B3049;--gold:#D6B15B;--gold2:#F2D995;--gold-dark:#8B6A27;--ivory:#F6F3EC;--paper:#FFFEFB;--ink:#1B2634;--muted:#687381;--line:#DED7C9;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--ivory);color:var(--ink);font:15px/1.7 var(--sans)}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.container{width:min(1180px,calc(100% - 42px));margin:auto}
+section{padding:86px 0}
+.eyebrow{display:inline-block;color:var(--gold-dark);font-size:.67rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+.section-head{max-width:720px;margin-bottom:34px}
+.section-head h2{font:500 clamp(2.15rem,4.5vw,3.6rem)/1.08 var(--serif);letter-spacing:-.025em;color:var(--navy);margin:13px 0}
+.section-head p{max-width:640px;color:var(--muted);margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 19px;border:1px solid transparent;border-radius:2px;font-size:.75rem;font-weight:800;letter-spacing:.035em;transition:transform .25s,background .25s,border-color .25s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(120deg,var(--gold2),var(--gold));color:var(--navy)}
+.btn-gold:hover{background:#fff}
+.btn-outline{border-color:#ffffff75;color:#fff}
+.btn-outline:hover{border-color:var(--gold2);background:#ffffff0d}
+
+/* Header */
+.header{position:sticky;top:0;z-index:50;background:rgba(8,17,30,.97);backdrop-filter:blur(14px);border-bottom:1px solid #D6B15B55}
+.nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-emblem{width:53px;height:53px;object-fit:cover;object-position:center;border:1px solid #D6B15B99;box-shadow:0 7px 24px #0007;flex:none}
+.brand-name{display:block;color:white;font:600 1rem var(--serif);letter-spacing:.075em;line-height:1.25}
+.brand-role{display:block;color:var(--gold2);font-size:.54rem;letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:22px}
+.nav-links>a:not(.btn){font-size:.73rem;color:#E1E6ED;font-weight:700}
+.nav-links>a:not(.btn):hover{color:var(--gold2)}
+.menu-toggle{display:none;color:white;background:none;border:1px solid #ffffff66;padding:7px 11px;font-size:1.2rem}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;min-height:690px;display:flex;align-items:center;overflow:hidden;background:var(--navy);color:#fff}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,#07111ef7 0%,#091625e8 49%,#09162580 100%),url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2200&q=88") center/cover;animation:heroPan 22s ease-in-out infinite alternate}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 78% 44%,#D6B15B20,transparent 30%)}
+.hero-layout{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:45px;padding:82px 0}
+.hero .eyebrow{color:var(--gold2)}
+.hero h1{font:500 clamp(3rem,6vw,5.8rem)/.99 var(--serif);letter-spacing:-.04em;margin:20px 0}
+.hero h1 em{color:var(--gold2);font-style:normal}
+.hero-copy{max-width:690px;color:#DCE2EA;font-size:.98rem;line-height:1.9}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.hero-signature{display:flex;align-items:center;gap:12px;color:#E6D3A4;text-transform:uppercase;letter-spacing:.12em;font-size:.63rem;font-weight:800;margin-top:33px}
+.hero-signature::before{content:"";width:38px;height:1px;background:var(--gold)}
+.hero-art{position:relative;min-height:390px;display:grid;place-items:center;perspective:1100px}
+.orb{position:absolute;width:min(330px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 25%,#fff6d7 0%,#e4bd68 12%,#9d7027 32%,#3e2c15 58%,#0c1420 72%);box-shadow:inset -25px -32px 60px #0009,inset 15px 12px 35px #fff4,0 35px 85px #0009;transform:rotateX(16deg) rotateY(-24deg);animation:floatOrb 7s ease-in-out infinite}
+.orb::before{content:"";position:absolute;inset:11%;border:1px solid #F5DC9B99;border-radius:50%;transform:rotate(-28deg) scaleY(.38);box-shadow:0 0 30px #D6B15B55}
+.hero-logo-frame{position:relative;z-index:2;width:205px;height:205px;padding:9px;background:linear-gradient(140deg,#f8e4aa,#97702c 45%,#f0d18a 70%,#6b4a1e);box-shadow:0 25px 55px #000a,0 0 0 9px #d6b15b12;transform:rotateY(-9deg) rotateX(4deg);animation:floatLogo 6s ease-in-out infinite}
+.hero-logo-frame img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-art-caption{position:absolute;bottom:10px;right:0;color:#E7D7B3;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase}
+
+/* Identity */
+.identity{background:var(--paper);border-bottom:1px solid var(--line)}
+.identity-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}
+.identity-name{font:500 clamp(2rem,4vw,3.1rem)/1.1 var(--serif);color:var(--navy);margin:10px 0 4px}
+.identity-title{color:var(--gold-dark);font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.identity-copy{color:var(--muted);font-size:.9rem}
+.identity-partner{display:inline-flex;align-items:center;gap:10px;margin-top:16px;padding:11px 14px;border:1px solid var(--line);background:#F8F6F0}
+.identity-partner img{width:38px;height:38px;object-fit:cover}
+.identity-partner strong{display:block;color:var(--navy);font-size:.75rem}
+.identity-partner small{display:block;color:var(--muted);font-size:.62rem}
+
+/* Expertise */
+.expertise{background:var(--ivory)}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.expertise-card{position:relative;overflow:hidden;padding:29px;background:linear-gradient(145deg,#fff,#f1eee6);border:1px solid var(--line);min-height:220px;transition:.3s}
+.expertise-card:hover{transform:translateY(-5px);box-shadow:0 22px 42px #0a142214;border-color:#D6B15B}
+.expertise-number{color:var(--gold-dark);font-size:.65rem;font-weight:800;letter-spacing:.14em}
+.expertise-card h3{font:500 1.42rem var(--serif);color:var(--navy);margin:18px 0 8px}
+.expertise-card p{font-size:.84rem;color:var(--muted);margin:0}
+.expertise-card::after{content:"";position:absolute;width:110px;height:110px;right:-40px;bottom:-48px;border:1px solid #D6B15B6b;border-radius:50%;box-shadow:0 0 0 12px #D6B15B0c,0 0 0 25px #D6B15B09}
+
+/* Portfolio */
+.portfolio{background:#ECE9E1}
+.portfolio-top{display:flex;justify-content:space-between;align-items:end;gap:30px}
+.portfolio-note{max-width:340px;margin-bottom:32px;padding:13px 15px;background:#fff;border-left:3px solid var(--gold);color:#5c6671;font-size:.74rem}
+.market-feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.market-feature{position:relative;min-height:260px;overflow:hidden;background:var(--navy);color:white;box-shadow:0 13px 28px #0a142218}
+.market-feature img{width:100%;height:100%;min-height:260px;object-fit:cover;opacity:.7;transition:transform .6s}
+.market-feature:hover img{transform:scale(1.07)}
+.market-feature::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07111ef5,#07111e12 78%)}
+.market-feature-content{position:absolute;z-index:1;left:19px;right:16px;bottom:18px}
+.market-feature-content small{color:var(--gold2);font-size:.62rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.market-feature-content h3{font:500 1.55rem var(--serif);margin:5px 0}
+.market-feature-content p{font-size:.72rem;color:#e4e8ed;margin:0}
+.portfolio-foot{margin-top:17px;color:var(--muted);font-size:.72rem}
+
+/* Operating model */
+.operating{background:var(--navy);color:white}
+.operating .section-head h2{color:white}
+.operating .section-head p{color:#C8D0DB}
+.operating .eyebrow{color:var(--gold2)}
+.operating-grid{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid #ffffff30}
+.operating-step{padding:24px 18px 24px 0}
+.operating-step+.operating-step{border-left:1px solid #ffffff28;padding-left:18px}
+.operating-step strong{font:500 1.4rem var(--serif);color:var(--gold2)}
+.operating-step h3{font:700 .9rem var(--sans);margin:12px 0 6px}
+.operating-step p{font-size:.78rem;color:#C2CBD6;margin:0}
+
+/* Markets directory */
+.markets{background:var(--paper)}
+.market-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.market-tab{border:1px solid var(--line);background:white;color:var(--navy);padding:11px 15px;font-size:.72rem;font-weight:800;letter-spacing:.04em;cursor:pointer}
+.market-tab.active{background:var(--navy);border-color:var(--navy);color:var(--gold2)}
+.market-search{width:min(440px,100%);padding:13px 15px;border:1px solid var(--line);background:#fff;margin-bottom:22px;outline:none}
+.market-search:focus{border-color:var(--gold)}
+.state-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.state-card{border:1px solid var(--line);background:#fff}
+.state-card summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:15px 16px;font-weight:800;color:var(--navy);font-size:.82rem}
+.state-card summary::-webkit-details-marker{display:none}
+.state-card summary::after{content:"+";color:var(--gold-dark);font-size:1.1rem}
+.state-card[open] summary::after{content:"−"}
+.state-cities{border-top:1px solid var(--line);padding:14px 16px;display:flex;flex-wrap:wrap;gap:7px}
+.city-chip{padding:5px 8px;background:var(--ivory);color:#485362;font-size:.68rem}
+.state-card[hidden]{display:none}
+.market-category-note{color:var(--muted);font-size:.74rem;margin:0 0 16px}
+
+/* Collaboration */
+.collaboration{background:#F0EEE8}
+.collab-panel{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;padding:clamp(28px,5vw,55px);background:linear-gradient(135deg,#0A1422,#162A43);color:white;position:relative;overflow:hidden;box-shadow:0 25px 55px #0a14222a}
+.collab-panel::after{content:"";position:absolute;right:-95px;bottom:-155px;width:350px;height:350px;border-radius:50%;border:1px solid #D6B15B52;box-shadow:0 0 0 22px #D6B15B0a,0 0 0 48px #D6B15B09,0 0 0 76px #D6B15B07}
+.collab-panel .eyebrow{color:var(--gold2)}
+.collab-panel h2{font:500 clamp(2rem,4vw,3.2rem)/1.1 var(--serif);margin:12px 0}
+.collab-panel p{color:#D0D8E2;font-size:.88rem}
+.collab-details{position:relative;z-index:1;border-left:1px solid #D6B15B70;padding-left:26px}
+.collab-row{padding:8px 0 17px}
+.collab-row+.collab-row{border-top:1px solid #ffffff24;padding-top:17px}
+.collab-row strong{display:block;color:var(--gold2);font:500 1.15rem var(--serif)}
+.collab-row span{display:block;color:#D5DCE4;font-size:.77rem;margin-top:3px}
+
+/* Investor form */
+.buybox{background:var(--ivory)}
+.form-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:40px;align-items:start}
+.form-aside{position:sticky;top:105px}
+.form-points{display:grid;gap:12px;margin-top:23px;color:#4F5A68;font-size:.82rem}
+.form-point::before{content:"✓";color:var(--gold-dark);font-weight:800;margin-right:10px}
+.buy-form{background:white;border:1px solid var(--line);padding:26px;box-shadow:0 16px 40px #0a14220c}
+.form-title{font:500 1.5rem var(--serif);color:var(--navy);margin:0}
+.form-sub{color:var(--muted);font-size:.78rem;margin:4px 0 20px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+.field label{font-size:.73rem;font-weight:800;color:#34404d}
+.field input,.field select,.field textarea{width:100%;min-height:44px;padding:10px;border:1px solid #D8D2C7;background:white;color:var(--ink);border-radius:2px}
+.field textarea{min-height:90px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #D6B15B55;border-color:var(--gold)}
+.consent{display:flex;flex-direction:row!important;align-items:flex-start;gap:9px;color:var(--muted)!important;font-size:.72rem!important;line-height:1.5}
+.consent input{margin-top:5px;accent-color:var(--navy)}
+.submit-row{grid-column:1/-1}
+.submit-row button{width:100%;border:0}
+.hp{display:none!important}
+
+/* Contact */
+.contact{background:#EAE7DF}
+.contact-grid{display:grid;grid-template-columns:1fr .85fr;gap:44px}
+.contact-copy h2{font:500 clamp(2.1rem,4vw,3.4rem)/1.1 var(--serif);color:var(--navy)}
+.contact-copy p{color:var(--muted);max-width:570px}
+.contact-card{background:white;border:1px solid var(--line);padding:27px;box-shadow:0 12px 35px #0a14220a}
+.contact-name{font:500 1.55rem var(--serif);color:var(--navy);margin:0}
+.contact-title{color:var(--gold-dark);font-size:.74rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin:5px 0 18px}
+.contact-links{display:grid;gap:12px;padding-bottom:19px;border-bottom:1px solid var(--line)}
+.contact-links a{display:flex;align-items:center;gap:11px;font-size:.82rem;font-weight:600;color:#394554;overflow-wrap:anywhere;transition:color .2s}
+.contact-links a:hover{color:var(--gold-dark)}
+.contact-icon{width:34px;height:34px;flex:0 0 34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #D6B15B99;background:#F9F6EE;color:var(--gold-dark);border-radius:50%}
+.contact-icon svg{width:16px;height:16px;display:block}
+.social-label{margin:20px 0 12px;color:var(--muted);font-size:.64rem;letter-spacing:.14em;font-weight:800}
+.socials{display:flex;gap:9px;flex-wrap:wrap}
+.social-link{width:37px;height:37px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:#fff;color:var(--gold-dark);transition:.2s}
+.social-link svg{width:18px;height:18px;display:block}
+.social-link:hover{background:var(--navy);color:var(--gold2);transform:translateY(-3px)}
+
+.footer{background:#070D16;color:#ADB6C2;padding:23px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.footer-brand{font:500 .9rem var(--serif);color:white}
+.footer small{font-size:.66rem}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s,transform .65s}
+.reveal.visible{opacity:1;transform:none}
+
+@keyframes heroPan{from{transform:scale(1.015)}to{transform:scale(1.07)}}
+@keyframes floatOrb{0%,100%{transform:rotateX(16deg) rotateY(-24deg) translateY(0)}50%{transform:rotateX(21deg) rotateY(-16deg) translateY(-13px)}}
+@keyframes floatLogo{0%,100%{transform:rotateY(-9deg) rotateX(4deg) translateY(0)}50%{transform:rotateY(4deg) rotateX(-2deg) translateY(-10px)}}
+
+@media(max-width:980px){
+.nav-links{gap:12px}
+.nav-links>a:not(.btn){font-size:.67rem}
+.hero-layout{grid-template-columns:1fr .7fr;gap:15px}
+.hero-art{min-height:310px}
+.hero-logo-frame{width:165px;height:165px}
+.orb{width:260px}
+.market-feature-grid{grid-template-columns:repeat(2,1fr)}
+.state-grid{grid-template-columns:repeat(2,1fr)}
+.form-layout{grid-template-columns:1fr}
+.form-aside{position:static}
+}
+
+@media(max-width:720px){
+.container{width:calc(100% - 30px)}
+section{padding:64px 0}
+.nav{min-height:70px}
+.brand-emblem{width:43px;height:43px}
+.brand-name{font-size:.86rem}
+.brand-role{font-size:.46rem}
+.menu-toggle{display:block}
+.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--navy);padding:14px 20px 20px;flex-direction:column;align-items:stretch;gap:0}
+.nav-links.open{display:flex}
+.nav-links>a:not(.btn){padding:12px 0;border-bottom:1px solid #ffffff1c}
+.nav-links .btn{margin-top:12px}
+.hero-layout{grid-template-columns:1fr;padding:65px 0}
+.hero-art{min-height:260px;margin-top:4px}
+.hero-logo-frame{width:145px;height:145px}
+.orb{width:230px}
+.hero-art-caption{right:10px}
+.hero h1{font-size:clamp(2.7rem,12vw,4.2rem)}
+.hero-actions{flex-direction:column;max-width:345px}
+.identity-grid,.expertise-grid,.collab-panel,.contact-grid{grid-template-columns:1fr;gap:22px}
+.portfolio-top{display:block}
+.portfolio-note{margin:0 0 23px}
+.market-feature-grid{grid-template-columns:1fr 1fr;gap:10px}
+.market-feature,.market-feature img{min-height:220px}
+.operating-grid{grid-template-columns:1fr 1fr}
+.operating-step:nth-child(3){border-left:0;padding-left:0;border-top:1px solid #ffffff28}
+.operating-step:nth-child(4){border-top:1px solid #ffffff28}
+.state-grid{grid-template-columns:1fr}
+.collab-details{border-left:0;border-top:1px solid #D6B15B70;padding:18px 0 0}
+.form-grid{grid-template-columns:1fr}
+.field.full,.submit-row{grid-column:auto}
+.buy-form{padding:19px 14px}
+.footer-inner{align-items:flex-start;flex-direction:column}
+}
+
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}
+*,*::before,*::after{animation:none!important;transition:none!important}
+.reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container nav">
+<a class="brand" href="#home" aria-label="MUSA Real Estate home">
+<img class="brand-emblem" src="musa-logo.jpg" alt="MUSA Real Estate logo">
+<span>
+<span class="brand-name">MUSA REAL ESTATE</span>
+<span class="brand-role">Acquisitions · Investor Relations · Disposition</span>
+</span>
+</a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false" type="button">☰</button>
+<nav class="nav-links" id="nav">
+<a href="#approach">Our Approach</a>
+<a href="#markets">Markets</a>
+<a href="#portfolio">Deal Flow</a>
+<a href="#collaboration">Collaboration</a>
+<a class="btn btn-gold" href="#buybox">Investor Buy Box ↗</a>
+</nav>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-layout">
+<div>
+<span class="eyebrow">Investor Relations &amp; Disposition</span>
+<h1>Investment Opportunities<br>
+<em>Relationships That Move Deals</em>
+</h1>
+<p class="hero-copy">Amaila Brooks works in collaboration with the MUSA acquisition team, coordinating investor relationships, buyer criteria and disposition communication around residential investment opportunities.</p>
+<div class="hero-actions">
+<a class="btn btn-gold" href="#buybox">Share Your Buy Box ↗</a>
+<a class="btn btn-outline" href="#portfolio">Explore Our Markets</a>
+</div>
+<div class="hero-signature">Investor-focused. Criteria-led. Relationship-driven.</div>
+</div>
+<div class="hero-art" aria-label="MUSA three-dimensional gold brand emblem">
+<div class="orb"></div>
+<div class="hero-logo-frame">
+<img src="musa-logo.jpg" alt="MUSA gold architectural logo">
+</div>
+<div class="hero-art-caption">MUSA Real Estate Community</div>
+</div>
+</div>
+</section>
+<section class="identity">
+<div class="container identity-grid">
+<div class="reveal">
+<span class="eyebrow">Your point of contact</span>
+<h2 class="identity-name">Amaila Brooks</h2>
+<div class="identity-title">Investor Relations &amp; Disposition</div>
+<div class="identity-partner">
+<img src="musa-logo.jpg" alt="">
+<span>
+<strong>In collaboration with the MUSA acquisition team</strong>
+<small>MUSA Real Estate Community</small>
+</span>
+</div>
+</div>
+<p class="identity-copy reveal">Amaila works with investors to understand acquisition criteria, organize buyer inquiries, present relevant deal information and coordinate disposition communication alongside the MUSA acquisition team. The team focuses on sourcing and acquisition coordination, while investor-facing disposition activity keeps buyer requirements and opportunity details aligned.</p>
+</div>
+</section>
+<section class="expertise" id="approach">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">A coordinated approach</span>
+<h2>From acquisition activity to investor conversations.</h2>
+<p>A clear workflow connects market research, buyer criteria and deal communication without blurring each party’s role.</p>
+</div>
+<div class="expertise-grid">
+<article class="expertise-card reveal">
+<span class="expertise-number">01 / ACQUISITION TEAM</span>
+<h3>Opportunity Sourcing</h3>
+<p>Market research, seller-side outreach and collection of available property information through the MUSA acquisition team.</p>
+</article>
+<article class="expertise-card reveal">
+<span class="expertise-number">02 / AMAILA BROOKS</span>
+<h3>Investor Relations</h3>
+<p>Buyer communication, buy-box details, market preferences and organized presentation of relevant opportunities.</p>
+</article>
+<article class="expertise-card reveal">
+<span class="expertise-number">03 / DISPOSITION</span>
+<h3>Deal Coordination</h3>
+<p>Coordinating disposition communication, investor questions and next steps with the relevant parties.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="portfolio" id="portfolio">
+<div class="container">
+<div class="portfolio-top">
+<div class="section-head reveal">
+<span class="eyebrow">Investor market focus</span>
+<h2>Markets. Strategies. Deal flow.</h2>
+<p>Market coverage and buyer criteria are organized around the property types and acquisition strategies investors are seeking.</p>
+</div>
+<p class="portfolio-note">Deal-specific asking terms, ARV and transaction status are shared only when supported by current property information and authorized for release.</p>
+</div>
+<div class="market-feature-grid">
+<article class="market-feature reveal">
+<img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="American residential property" loading="lazy">
+<div class="market-feature-content">
+<small>Ohio</small>
+<h3>Cleveland</h3>
+<p>Single-family · Value-add · Investor criteria</p>
+</div>
+</article>
+<article class="market-feature reveal">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Residential home interior" loading="lazy">
+<div class="market-feature-content">
+<small>Missouri</small>
+<h3>St. Louis</h3>
+<p>Residential · Rehab · Buy and hold</p>
+</div>
+</article>
+<article class="market-feature reveal">
+<img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Residential property interior" loading="lazy">
+<div class="market-feature-content">
+<small>Michigan</small>
+<h3>Detroit</h3>
+<p>Single-family · Rental · Investor criteria</p>
+</div>
+</article>
+<article class="market-feature reveal">
+<img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="American residential property exterior" loading="lazy">
+<div class="market-feature-content">
+<small>Southeast</small>
+<h3>Alabama</h3>
+<p>Residential · Cash and creative criteria</p>
+</div>
+</article>
+</div>
+<p class="portfolio-foot">For current property availability, pricing, contract position and transaction status, contact Amaila Brooks. Market focus does not imply a property is currently available.</p>
+</div>
+</section>
+<section class="operating">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">How coordination works</span>
+<h2>Clear roles. A connected process.</h2>
+<p>Each opportunity is considered on its own information, contract position and investor requirements.</p>
+</div>
+<div class="operating-grid">
+<div class="operating-step reveal">
+<strong>01</strong>
+<h3>Investor Criteria</h3>
+<p>Understand market, property type, budget and strategy.</p>
+</div>
+<div class="operating-step reveal">
+<strong>02</strong>
+<h3>Acquisition Activity</h3>
+<p>MUSA team researches opportunities and coordinates seller-side activity.</p>
+</div>
+<div class="operating-step reveal">
+<strong>03</strong>
+<h3>Disposition Coordination</h3>
+<p>Amaila organizes investor communication and relevant deal information.</p>
+</div>
+<div class="operating-step reveal">
+<strong>04</strong>
+<h3>Investor Review</h3>
+<p>Buyers verify details, complete due diligence and decide independently.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="markets" id="markets">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">Market coverage</span>
+<h2>Cash offer markets and creative offer markets.</h2>
+<p>Explore the cities associated with each offer approach. Select a state to view its listed markets.</p>
+</div>
+<div class="market-tabs">
+<button class="market-tab active" data-market="cash" type="button">Cash Offers</button>
+<button class="market-tab" data-market="creative" type="button">Creative Offers</button>
+</div>
+<p class="market-category-note" id="market-note">Cash offer market directory.</p>
+<input class="market-search" id="market-search" type="search" placeholder="Search a state or city…" aria-label="Search state or city">
+<div class="state-grid" id="state-grid"></div>
+</div>
+</section>
+<section class="collaboration" id="collaboration">
+<div class="container">
+<div class="collab-panel reveal">
+<div>
+<span class="eyebrow">MUSA partnership</span>
+<h2>Investor relationships, supported by coordinated acquisition activity.</h2>
+<p>Amaila Brooks works in collaboration with the MUSA acquisition team to align buyer criteria, property information and disposition communication. The focus is a clear path between an investor’s requirements and opportunities presented for review.</p>
+<a class="btn btn-gold" href="#contact">Connect With Amaila ↗</a>
+</div>
+<div class="collab-details">
+<div class="collab-row">
+<strong>Amaila Brooks</strong>
+<span>Investor Relations &amp; Disposition</span>
+</div>
+<div class="collab-row">
+<strong>MUSA Real Estate Community</strong>
+<span>Acquisition team collaboration</span>
+</div>
+<div class="collab-row">
+<strong>Investor Network</strong>
+<span>Buy-box communication and opportunity coordination</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="buybox" id="buybox">
+<div class="container form-layout">
+<aside class="form-aside">
+<div class="section-head reveal">
+<span class="eyebrow">Investor registration</span>
+<h2>Put your buy box on our radar</h2>
+<p>Share the markets, price range and property profile you are targeting. Amaila can use these criteria to organize relevant investor conversations with the MUSA acquisition team.</p>
+</div>
+<div class="form-points">
+<div>Target cities and states</div>
+<div>Cash or creative offer preference</div>
+<div>Property type, condition and budget</div>
+<div>Purchase timeline and funding approach</div>
+</div>
+</aside>
+<form class="buy-form" name="investor-buy-box" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="investor-buy-box">
+<p class="hp">
+<label>Leave blank <input name="bot-field"></label>
+</p>
+<h3 class="form-title">Investor Buy Box</h3>
+<p class="form-sub">Complete your criteria and submit your investor inquiry.</p>
+<div class="form-grid">
+<div class="field">
+<label for="name">Full name *</label>
+<input id="name" name="Full name" required autocomplete="name">
+</div>
+<div class="field">
+<label for="email">Email address *</label>
+<input id="email" name="Email address" type="email" required autocomplete="email">
+</div>
+<div class="field">
+<label for="phone">Phone number</label>
+<input id="phone" name="Phone number" type="tel" autocomplete="tel">
+</div>
+<div class="field">
+<label for="company">Company / entity</label>
+<input id="company" name="Company / entity">
+</div>
+<div class="field">
+<label for="markets">Target market(s) *</label>
+<input id="markets-input" name="Target markets" required placeholder="City, state or ZIP">
+</div>
+<div class="field">
+<label for="offer-type">Offer preference *</label>
+<select id="offer-type" name="Offer preference" required>
+<option value="">Select</option>
+<option>Cash offers</option>
+<option>Creative offers</option>
+<option>Both</option>
+</select>
+</div>
+<div class="field">
+<label for="strategy">Investment strategy *</label>
+<select id="strategy" name="Investment strategy" required>
+<option value="">Select</option>
+<option>Fix and flip</option>
+<option>Buy and hold</option>
+<option>Rental</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field">
+<label for="property">Property type *</label>
+<select id="property" name="Property type" required>
+<option value="">Select</option>
+<option>Single-family</option>
+<option>2–4 unit multifamily</option>
+<option>5+ unit multifamily</option>
+<option>Condo or townhouse</option>
+<option>Land</option>
+<option>Flexible</option>
+</select>
+</div>
+<div class="field">
+<label for="budget">Purchase budget *</label>
+<select id="budget" name="Purchase budget" required>
+<option value="">Select</option>
+<option>Under $50,000</option>
+<option>$50,000–$100,000</option>
+<option>$100,000–$150,000</option>
+<option>$150,000–$250,000</option>
+<option>$250,000–$500,000</option>
+<option>$500,000+</option>
+</select>
+</div>
+<div class="field">
+<label for="condition">Property condition</label>
+<select id="condition" name="Property condition">
+<option value="">Select</option>
+<option>Turnkey</option>
+<option>Light rehab</option>
+<option>Moderate rehab</option>
+<option>Heavy rehab</option>
+<option>Flexible</option>
+</select>
+</div>
+<div class="field">
+<label for="funding">Funding approach</label>
+<select id="funding" name="Funding approach">
+<option value="">Select</option>
+<option>Cash</option>
+<option>Bank financing</option>
+<option>Private or hard money</option>
+<option>Other</option>
+</select>
+</div>
+<div class="field">
+<label for="timeline">Purchase timeline</label>
+<select id="timeline" name="Purchase timeline">
+<option value="">Select</option>
+<option>Ready now</option>
+<option>Within 30 days</option>
+<option>1–3 months</option>
+<option>3+ months</option>
+<option>Researching</option>
+</select>
+</div>
+<div class="field full">
+<label for="notes">Additional criteria</label>
+<textarea id="notes" name="Additional criteria" placeholder="Your preferred property details or deal requirements."></textarea>
+</div>
+<div class="field full">
+<label class="consent">
+<input type="checkbox" name="Consent to contact" value="Yes" required>
+<span>I agree that MUSA Real Estate Community may use these details to respond to my investor inquiry. *</span>
+</label>
+</div>
+<div class="field full">
+<button class="btn btn-gold" type="submit">Submit Investor Criteria ↗</button>
+</div>
+</div>
+</form>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div class="contact-copy">
+<span class="eyebrow">Direct contact</span>
+<h2>Let's talk about your acquisition criteria.</h2>
+<p>For investor inquiries, buy-box updates and disposition coordination, contact Amaila Brooks.</p>
+</div>
+<div class="contact-card">
+<h3 class="contact-name">Amaila Brooks</h3>
+<div class="contact-title">Investor Relations &amp; Disposition</div>
+<div class="contact-links">
+<a href="mailto:amailaabrooks@gmail.com" aria-label="Email Amaila Brooks">
+<span class="contact-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<rect x="3" y="5" width="18" height="14" rx="2"></rect>
+<path d="m4 7 8 6 8-6"></path>
+</svg>
+</span>
+<span>amailaabrooks@gmail.com</span>
+</a>
+<a href="tel:+17375377679" aria-label="Call Amaila Brooks">
+<span class="contact-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M7 3H5a2 2 0 0 0-2 2c0 8.84 7.16 16 16 16a2 2 0 0 0 2-2v-2l-5-2-2 3a14 14 0 0 1-7-7l3-2-2-5Z"></path>
+</svg>
+</span>
+<span>+1 737-537-7679</span>
+</a>
+</div>
+<div class="social-label">Connect with MUSA</div>
+<div class="socials">
+<a class="social-link" href="https://www.youtube.com/@musa_realestate_community" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12s0 3.8.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-2 .5-5.8.5-5.8s0-3.8-.5-5.8ZM9.6 15.5v-7l6.2 3.5-6.2 3.5Z"></path>
+</svg>
+</a>
+<a class="social-link" href="https://www.instagram.com/musa_realestate_community" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+<circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="17.5" cy="6.8" r="1.2" fill="currentColor"></circle>
+</svg>
+</a>
+<a class="social-link" href="https://www.tiktok.com/@musarealestate.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path fill="currentColor" d="M19.6 6.2a5.7 5.7 0 0 1-3.5-1.2V15a6.2 6.2 0 1 1-5.4-6.1V12a3.1 3.1 0 1 0 2.2 3V1.5h3.2a5.7 5.7 0 0 0 3.5 3.5Z"></path>
+</svg>
+</a>
+<a class="social-link" href="https://www.facebook.com/MusaRealEstatecommunity/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path fill="currentColor" d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.7-.1-2.7 0-4.5 1.6-4.5 4.7v1.9h-3v3.2h3V21Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footer-inner">
+<a class="footer-brand" href="#home">MUSA Real Estate Community</a>
+<small>© <span id="year">2026</span> MUSA Real Estate Community</small>
+</div>
+</footer>
+<script>
+(function(){
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('#nav');
+
+if(toggle&&nav){
+toggle.addEventListener('click',()=>{
+const open=nav.classList.toggle('open');
+toggle.setAttribute('aria-expanded',String(open));
+toggle.textContent=open?'×':'☰';
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+nav.classList.remove('open');
+toggle.setAttribute('aria-expanded','false');
+toggle.textContent='☰';
+}));
+}
+
+document.querySelector('#year').textContent=new Date().getFullYear();
+
+const observer=('IntersectionObserver' in window)
+? new IntersectionObserver(entries=>entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+observer.unobserve(entry.target);
+}
+}),{threshold:.12})
+:null;
+
+document.querySelectorAll('.reveal').forEach(el=>
+observer?observer.observe(el):el.classList.add('visible')
+);
+
+const data={
+cash:{
+Arizona:['Maricopa','Mesa','Miami','Phoenix','Scottsdale','Tucson','Tucson Estates'],
+Georgia:['Acworth','Atlanta','Augusta','Calhoun','Columbus','Cumming','Decatur','Kennesaw','Lawrenceville','Macon','Marietta','McDonough','Meigs','Norcross','Powder Springs','Richland','Ringgold','Riverdale','Savannah','Smyrna','Valdosta'],
+Nevada:['Carson City','Las Vegas','Reno'],
+'North Carolina':['Charlotte','Durham','Fayetteville','Greensboro','Greenville','Hamlet','Huntersville','Marion','Mooresville','Nashville','Raleigh','Smithfield','Wake Forest','Winston-Salem'],
+Tennessee:['Bartlett','Bristol','Chattanooga','Clarksville','Crossville','Humboldt','Jackson','Knoxville','Lenoir City','Memphis','Middle Valley','Murfreesboro','Nashville'],
+Texas:['Amarillo','Arlington','Atascocita','Austin','Baytown','Beaumont','Bells','Cleveland','Conroe','Dallas','El Paso','Fort Worth','Hollywood Park','Houston','Katy','Killeen','Longview','Lubbock','McAllen','McKinney','Richmond','Smithville','Spring','Sugar Land','The Woodlands','Waco','Whitesboro','Wichita Falls'],
+Florida:['Anna Maria','Broward Estates','Cape Coral','Clearwater','Daytona Beach','Deerfield Beach','DeLand','Dunedin','Fort Lauderdale','Fort Myers','Gainesville','Hillsborough County','Hollywood','Jacksonville','Lake Wales','Lakeland','Lehigh Acres','Miami','Miami Lakes','Milton','Naples','Oakland','Ocala','Orlando','Palm Bay','Palm Beach Gardens','Panama City','Panama City Beach','Pensacola','Polk City','Pompano Beach','Port Charlotte','Port Richey','Port Saint Lucie','Saint Augustine','Sarasota','Seminole','St. Petersburg','Tallahassee','Tampa','Winter Haven']
+},
+creative:{
+Alabama:['Abbeville','Alexandria','Birmingham','Huntsville','Madison','Mobile','Montgomery'],
+Arizona:['Bullhead City','Gilbert','Maricopa','Mesa','Phoenix','Scottsdale','Surprise','Tempe','Tucson','Yuma'],
+Georgia:['Atlanta','Brunswick','Buford','Canton','Columbus','Gainesville','Hamilton','Lawrenceville','Macon','Marietta','Pooler','Richland','Ringgold','Savannah','Watkinsville','Winder'],
+California:['Anaheim'],
+Indiana:['Carmel','East Chicago','Elkhart','Fort Wayne','Gary','Highland','Indianapolis','Kokomo','New Albany','South Bend'],
+Michigan:['Ann Arbor','Detroit','DeWitt','Grand Blanc','Grand Rapids','Holland','Lansing','Milford','Redford','Saginaw','Southfield','Westland'],
+'North Carolina':['Asheville','Charlotte','Durham','Elizabeth City','Greensboro','Hamlet','Mebane','Monroe','Nashville','Raleigh','Wilmington','Winston-Salem'],
+Ohio:['Akron','Atlanta','Celina','Cincinnati','Cleveland','Columbus','Dayton','Findlay','Huber Heights','Lorain','Massillon','Springfield','Toledo','Warren','Wooster','Youngstown'],
+Tennessee:['Athens','Bristol','Chattanooga','Church Hill','Clarksville','Crossville','Hendersonville','Knoxville','Memphis','Nashville'],
+Texas:['Abilene','Arlington','Austin','Bells','Brenham','Canyon','College Station','Corpus Christi','Cypress','Dallas','Edinburg','El Paso','Fort Worth','Groves','Houston','Longview','Lubbock','McAllen','McKinney','Midland','New Braunfels','Richardson','San Antonio','Sherman','Smithville','Spring','Wichita Falls'],
+Florida:['Anna Maria','Auburndale','Boca Raton','Cape Coral','Clearwater','Coral Gables','Crawfordville','Daytona Beach','DeBary','DeLand','Destin','Dunedin','Fort Lauderdale','Fort Myers','Fort Myers Beach','Hollywood','Inverness','Jacksonville','Lakeland','Leesburg','Merritt Island','Miami','Milton','New Port Richey','Ocala','Orlando','Palm Beach','Pensacola','Polk City','Pompano Beach','Port Charlotte','Port Saint Lucie','Sarasota','St. Petersburg','Stuart','Tallahassee','Tampa','Titusville','Wesley Chapel','West Palm Beach']
+}
+};
+
+let current='cash';
+const grid=document.querySelector('#state-grid');
+const search=document.querySelector('#market-search');
+const note=document.querySelector('#market-note');
+
+function render(){
+grid.innerHTML='';
+const q=search.value.trim().toLowerCase();
+
+Object.entries(data[current]).forEach(([state,cities])=>{
+const filtered=cities.filter(c=>c.toLowerCase().includes(q));
+const stateMatch=state.toLowerCase().includes(q);
+
+if(q&&!stateMatch&&!filtered.length)return;
+
+const shown=stateMatch?cities:filtered;
+const details=document.createElement('details');
+details.className='state-card';
+
+const summary=document.createElement('summary');
+summary.textContent=state+' · '+shown.length+' markets';
+details.appendChild(summary);
+
+const list=document.createElement('div');
+list.className='state-cities';
+
+shown.forEach(city=>{
+const chip=document.createElement('span');
+chip.className='city-chip';
+chip.textContent=city;
+list.appendChild(chip);
+});
+
+details.appendChild(list);
+grid.appendChild(details);
+});
+}
+
+document.querySelectorAll('.market-tab').forEach(btn=>{
+btn.addEventListener('click',()=>{
+document.querySelectorAll('.market-tab').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+current=btn.dataset.market;
+note.textContent=current==='cash'?'Cash offer market directory.':'Creative offer market directory.';
+render();
+});
+});
+
+search.addEventListener('input',render);
+render();
+})();
+</script>
+</body>
+</html>
+
