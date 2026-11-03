@@ -172,6 +172,61 @@
   .process-step,.process-step+.process-step{padding:22px 0;border-left:0;border-top:1px solid rgba(255,255,255,.2)}
   .process-step:first-child{border-top:0}
 }
+
+/* MUSA map refinement — crisp, restrained and responsive */
+.market-map-visual{
+  margin:28px 0 0;
+  overflow:hidden;
+  border:1px solid rgba(198,164,94,.42);
+  border-radius:3px;
+  background:
+    radial-gradient(ellipse at 50% 45%,rgba(35,63,87,.55),transparent 68%),
+    #091827;
+  box-shadow:0 18px 42px rgba(7,18,31,.16);
+}
+.market-map-visual .market-map-svg{
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  aspect-ratio:760/330;
+}
+.market-map-visual figcaption{
+  padding:11px 16px;
+  color:#c3cbd3;
+  background:#081523;
+  border-top:1px solid rgba(214,177,91,.22);
+  font-size:.68rem;
+  letter-spacing:.025em;
+}
+.market-map-visual svg text{paint-order:stroke;stroke:#091827;stroke-width:2px;stroke-linejoin:round}
+.market-map-visual svg path{vector-effect:non-scaling-stroke}
+@media(max-width:760px){
+ .market-map-visual{margin-top:20px}
+ .market-map-visual .market-map-svg{aspect-ratio:760/360}
+ .market-map-visual figcaption{font-size:.62rem;padding:9px 12px}
+}
+
+
+/* Reference-led layout refinements */
+.hero{min-height:590px}
+.hero:before{background-position:center 54%;background-size:cover}
+.hero:after{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:linear-gradient(90deg,rgba(5,17,30,.96) 0%,rgba(5,17,30,.86) 34%,rgba(5,17,30,.28) 68%,rgba(5,17,30,.08) 100%);
+}
+.hero-inner{position:relative;z-index:1;max-width:1180px}
+.hero h1{max-width:760px}
+.market-layout{align-items:center}
+.market-copy{max-width:560px}
+.market-panel{border:1px solid rgba(214,177,91,.45);border-radius:2px}
+@media(max-width:760px){
+ .hero{min-height:560px}
+ .hero:after{background:linear-gradient(90deg,rgba(5,17,30,.94),rgba(5,17,30,.66))}
+ .hero-inner{padding-top:75px;padding-bottom:55px}
+ .market-layout{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
@@ -272,7 +327,7 @@
 <path d="M48 42H712M48 288H712" opacity=".14" stroke="#D6B15B"></path>
 <text fill="#D6B15B" font-family="Arial,sans-serif" font-size="12" letter-spacing="3" x="52" y="34">ILLUSTRATIVE U.S. MARKET VIEW</text>
 <g transform="translate(35 30)">
-<path d="M40 74 58 65 78 61 91 53 108 58 126 49 145 54 162 46 180 52 197 48 216 56 236 51 255 59 275 55 295 65 316 63 333 71 355 68 372 77 392 73 412 84 432 81 450 91 469 92 485 103 504 101 520 112 533 111 548 123 560 128 553 141 538 143 527 157 512 159 507 176 493 186 485 204 468 209 451 203 437 212 423 203 405 207 393 194 375 197 364 184 346 190 331 176 315 181 301 169 284 174 270 162 252 168 237 155 219 161 206 147 188 151 175 137 158 143 146 128 129 133 118 116 101 121 90 105 72 109 62 94 48 94Z" fill="url(#usFill)" stroke="#C7A45E" stroke-linejoin="round" stroke-width="2.2"></path>
+<path d="M34 83 L48 75 61 77 72 69 88 72 101 63 116 68 129 58 147 62 160 54 178 59 191 53 207 61 222 58 238 64 254 59 269 67 285 64 302 72 318 69 335 76 352 72 368 80 386 77 400 84 417 82 431 91 448 89 461 97 477 96 490 105 504 103 515 112 528 112 538 123 550 125 558 136 571 139 566 150 555 152 550 164 538 169 533 183 523 192 517 207 506 212 499 226 490 237 479 232 470 218 463 203 453 194 443 181 432 177 423 163 409 161 398 149 385 150 373 138 358 143 345 132 330 137 318 127 304 132 291 121 276 126 262 115 248 120 235 108 219 113 205 101 190 106 177 94 162 100 149 88 135 95 122 84 109 90 96 80 82 88 69 82 57 89 45 84Z" fill="url(#usFill)" stroke="#C7A45E" stroke-linejoin="round" stroke-width="2.2"></path>
 <path d="M40 74 58 65 78 61 91 53 108 58 126 49 145 54 162 46 180 52 197 48 216 56 236 51 255 59 275 55 295 65 316 63 333 71 355 68 372 77 392 73 412 84 432 81 450 91 469 92 485 103 504 101 520 112 533 111 548 123 560 128 553 141 538 143 527 157 512 159 507 176 493 186 485 204 468 209 451 203 437 212 423 203 405 207 393 194 375 197 364 184 346 190 331 176 315 181 301 169 284 174 270 162 252 168 237 155 219 161 206 147 188 151 175 137 158 143 146 128 129 133 118 116 101 121 90 105 72 109 62 94 48 94Z" fill="url(#mapDots)" opacity=".8"></path>
 <path d="M125 112C205 148 260 112 320 126S425 159 486 129 520 123 537 134" fill="none" opacity=".7" stroke="#D6B15B" stroke-dasharray="5 7" stroke-width="2"></path>
 <path d="M320 126C340 151 359 165 393 178M320 126C286 104 245 93 209 100" fill="none" opacity=".45" stroke="#D6B15B" stroke-dasharray="4 7" stroke-width="1.5"></path>
